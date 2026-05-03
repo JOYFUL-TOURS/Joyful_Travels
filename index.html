@@ -36,11 +36,15 @@
     background: #003366;
     padding: 12px;
     text-align: center;
+    flex-wrap:wrap;
 }
 
         nav a {
+    text-decoration: none;
+    margin:0 10px;
     color: white;
     font-weight: bold;
+    font-size: 14px;
 }
 
         nav a:hover {
@@ -149,6 +153,46 @@ footer {
     transform: translateY(-8px);
     transition: 0.3s;
 }
+        @media (max-width: 768px)  {
+             nav {
+    display: flex;
+    justify-content: center;
+    gap : 15px;
+    margin-top: 10px;
+    flex-wrap:wrap;
+}
+
+        nav a {
+    text-decoration: none;
+    padding: 5px 8px;
+    font-size: 14px;
+}
+
+            h1 {
+                font-size: 24px;
+                text-align : center;
+                
+            }
+            h2 {
+                font-size: 18px;
+                text-align: center;
+                
+            }
+            p {
+                font-size: 14px;
+                text-align : center;
+            }
+            .hero {
+                padding : 20px;
+                text-align: center;
+            }
+            img {
+                max-width: 100%;
+                height : auto;
+                
+            }
+
+        }
 
     </style>
 </head>
